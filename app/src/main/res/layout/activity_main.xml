@@ -17,13 +17,13 @@
             android:id="@+id/inputNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter a number"/>
+            android:hint="@string/enter_a_number"/>
 
         <Button
             android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="@string/submit"
             android:onClick="GenerateList"/>
 
         <ListView
@@ -31,12 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/history"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="History"
-            android:onClick="History"/>
     </LinearLayout>
+    <Button
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        android:onClick="History"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
