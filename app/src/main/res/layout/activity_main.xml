@@ -35,7 +35,8 @@
             android:id="@+id/history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="History" />
+            android:text="History"
+            android:onClick="History"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
