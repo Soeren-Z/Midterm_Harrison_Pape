@@ -1,5 +1,6 @@
 package com.example.midterm_harrison_pape;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private Button history;
     private ArrayList<String> list;
     private ArrayAdapter<String> adapter;
+    public static ArrayList<Integer> historyList = new ArrayList<>();
 
 
     @Override
@@ -73,8 +75,10 @@ public class MainActivity extends AppCompatActivity {
             list.add(num + " x " + i + " = " + (num * i));
         }
         adapter.notifyDataSetChanged();
+        historyList.add(num);
     }
     public void History(View view) {
-
+        Intent intent = new Intent(this, HistoryActivity.class);
+        startActivity(intent);
     }
 }
